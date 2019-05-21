@@ -1,0 +1,42 @@
+{
+  "name": "@adtalem/package-template",
+  "description": "Package template to create npm package",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest --config jestconfig.json",
+    "test:debug": "node --inspect-brk node_modules/.bin/jest --runInBand --config jestconfig.json",
+    "start": "backpack -r dotenv/config",
+    "eslint": "eslint '**/*.{js,jsx}' --quiet",
+    "prettier": "prettier --write '**/*.{js,jsx}'",
+    "build": "backpack build",
+    "node": "node -r dotenv/config ./src/index.js dotenv_config_path=.env",
+    "docs": "documentation build src/** -f md -o API.md"
+  },
+  "keywords": [
+    "adtalem"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "axios": "^0.18.0",
+    "backpack-core": "^0.8.3",
+    "dotenv": "^8.0.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^4.2.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jest": "^22.5.1",
+    "eslint-plugin-jsdoc": "^4.8.4",
+    "jest": "^24.8.0",
+    "prettier": "^1.17.0"
+  },
+  "peerDependencies": {
+    "axios": "^0.18.0",
+    "dotenv": "^8.0.0"
+  },
+  "repository": {
+    "url": ""
+  },
+  "dependencies": {}
+}
