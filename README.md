@@ -1,4 +1,4 @@
-# @adtalem/package-template
+# @adtalem/npm-template
 
 This is a npm package template. In package.json file, some common development dependencies are included in `devDependencies` section. If a dependency is needed for other application to use this package then this dependency should also be placed in `peerDependencies` section.
 
@@ -27,7 +27,7 @@ Make sure your node is v10 and npm is v6.
 
 ## Configure package
 
-Rename package-template folder to your project name, I will use `your_package` here.
+Rename npm-template folder to your project name, I will use `your_package` here.
 
 ### Remove git reference
 
