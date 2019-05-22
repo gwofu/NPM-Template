@@ -1,6 +1,6 @@
 {
-  "name": "@adtalem/package-template",
-  "description": "Package template to create npm package",
+  "name": "@adtalem/npm-template",
+  "description": "NPM template to create npm package",
   "version": "1.0.0",
   "main": "src/index.js",
   "scripts": {
