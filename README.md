@@ -82,28 +82,23 @@ Create API documentation API.md at project root
 
 ## Publish package
 
-Before publishing you need to setup your account by running the following two commands in a terminal:
+We install our private packages from Gitlab. Follow this page <https://docs.gitlab.com/ee/user/project/deploy_tokens/>
+to create a deploy token. Compose the download link as
 
-    > npm set registry http://ec2-3-84-229-75.compute-1.amazonaws.com:4873
-    $ npm adduser --registry http://ec2-3-84-229-75.compute-1.amazonaws.com:4873
+    git+https://token_username:token@gitlab.com/atge-mobile-team/npm-modules/repository_name#{branch|tag}",
 
-To increment version number
+Example:
 
-    > npm version <patch | minor | major>
+    git+https://gitlab+deploy-token-69343:hwvAiUzK4EE5HzdLsYnA@gitlab.com/atge-mobile-team/npm-modules/okta#master",
 
-To publish run
+Now in package.json add the dependency as below:
 
-    > npm publish
-
-Our published packages can found at http://ec2-3-84-229-75.compute-1.amazonaws.com:4873/#/.
+    "@adtalem/okta": "git+https://gitlab+deploy-token-69343:hwvAiUzK4EE5HzdLsYnA@gitlab.com/atge-mobile-team/npm-modules/okta#master",
 
 ## Resources
 
-About [Verdaccio](https://verdaccio.org/en/).  
-About [pm2](https://www.npmjs.com/package/pm2)  
-&nbsp;&nbsp;&nbsp;- pm2 is used to manage Verdaccio application. Config file is located at /home/ubuntu/.config/verdaccio/config.yaml  
-About [CodeCommit](https://docs.aws.amazon.com/codecommit/latest/userguide/welcome.html).  
-About [Jest](https://jestjs.io/).  
+[Gitlab Docs](https://docs.gitlab.com/ee/README.html/)  
+About [Jest](https://jestjs.io/)  
 About [Dotenv](https://www.npmjs.com/package/dotenv)  
 About [documentation.js](https://documentation.js.org/)  
 About [Backpack](https://www.npmjs.com/package/backpack-core)  
