@@ -16,7 +16,7 @@
   "keywords": [
     "adtalem"
   ],
-  "author": "",
+  "author": "Gwowen Fu",
   "license": "ISC",
   "devDependencies": {
     "axios": "^0.18.0",
@@ -36,7 +36,7 @@
     "dotenv": "^8.0.0"
   },
   "repository": {
-    "url": ""
+    "url": "https://gitlab.com/atge-mobile-team/npm-template.git"
   },
   "dependencies": {}
 }
